@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang=zh-cmn-Hans><head><meta charset=utf-8><meta name=renderer content=webkit><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=description content=""><meta name=keywords content=""><meta name=author content="Siming, siming535gmail.com"><meta name=format-detection content="telephone=no"><meta name=viewport content="width=device-width,initial-scale=1,user-scalable=no"><meta name=apple-mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-status-bar-style content=black-translucent><title>学车</title><style>#welcome-loading{
+            position:absolute;
+            top:0;
+            right:0;
+            bottom:0;
+            left:0;
+            max-width:640px;
+            padding-top: 100px;
+            margin:0 auto;
+            text-align:center;
+            z-index:1000;
+            background-color:#f5f5f5
+        }
+        #welcome-loading .img{
+            display:block;
+            margin:0 auto;
+            border-radius:5px;
+            background-color:#fff;
+        }
+        #welcome-loading .m-loading-icon{
+            display:inline-block;
+            width:24px;
+            height:24px;
+            background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAQAAAC0NkA6AAAACXZwQWcAAAAyAAAAMgCxEE/eAAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAAAEgAAABIAEbJaz4AAAHqSURBVFjD5ZjRTsIwFIb/LYxBpggaE5dwQTCagFfOG668JRG85A3At4D4EoT4tHo6mKGup127TUPkT0jTnOZj/U//seET9Qv/DcJ96oFEGJGi+iA+XrDFB2lLI78eyCIFZFrUAbnEToLsaMYNovkkEkLoEQUbgoO0cUtqayEJ2HozxMcz1ngnrWnkH9Z1c9vVBVtvhkzTBZmm379WYTxXb4JcYCMt2tAM28JcvQkylpYIjY72PsQ9KTyaUdbbQ8a6plPXmyCd3OV3oDs/BeoLGq9NAgfjC7SkbT13GJsYkJqmtC1WX/K+YREr5W5JZpxcEKJPCktBGtRdHfpWQjxK1SXeSEsaeU4QDzHF5hMpoZGXh0xSQKaJE6SfAjL1f0LOsJIgK5qxhTQPV5EpEd12DBlKCKGBNaQnIYS6JsiwAkhPhkS57YqsIUFuu4I/MP6XWnh/wTEpKHUYfZyTfP7EV5ZdilhRLApwTQoKQxRhok9hD3eY4ZU0o5FnhDBO6CEPKSDTgxHC9JQO0sZcgszF/0KXMNFBYgkhdKN1lg0TO0gM1mBdmOggrdx2tcAarAsTa+M5g12NV7YwZ7B7C+/3/orUMBmsCxOXJy2lwU5PWi53i2qffo0GVwExGlzVGwmtwafwbuUEXkV9AaQe+AMOMIBcAAAAAElFTkSuQmCC) no-repeat;
+            background-size:cover;
+            vertical-align:middle;
+            -webkit-animation:loading 1.5s linear infinite;
+            animation:loading 1.5s linear infinite
+        }
+        #welcome-loading .m-loading-txt{
+            color:#666;
+            font-size: 14px;
+            line-height: 50px;
+        }
+        @Html.Raw(@"
+            @-webkit-keyframes loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}25%{-webkit-transform:rotate(90deg);transform:rotate(90deg)}50%{-webkit-transform:rotate(180deg);transform:rotate(180deg)}75%{-webkit-transform:rotate(270deg);transform:rotate(270deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}25%{-webkit-transform:rotate(90deg);transform:rotate(90deg)}50%{-webkit-transform:rotate(180deg);transform:rotate(180deg)}75%{-webkit-transform:rotate(270deg);transform:rotate(270deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
+        ")
+        /*样式隐藏广告*/
+        #_embed_v3_dc,iframes,iframe{
+            display:none!important;
+        }</style><link href=/static/css/app.097fe3ae87ac384a460757ae148fba89.css rel=stylesheet></head><body ontouchstart=""><div id=welcome-loading><img class=img src=http://m.gdnymall.com/web.png width=80 height=80> <span class=m-loading-icon></span> <span class=m-loading-txt>数据加载中</span></div><div id=app></div><script>// 控制字根大小rem
+        ;(function(win, doc) {
+            function change() {
+                var W = win.innerWidth;
+                var oStyle = doc.getElementsByTagName("html")[0].style;
+                if (W > 640) {
+                    document.body.className = "max-media";
+                } else {
+                    document.body.className = "min-media";
+                }
+                oStyle.fontSize = W > 640 ? "34px" : (W/18.75 + "px");
+                oStyle.backgroundColor = W > 640 ? "#eae9ee" : "";
+            }
+            change();
+            win.addEventListener('resize', change, false);
+        })(window, document);</script><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.9669ef0200e764acbfcf.js></script><script type=text/javascript src=/static/js/app.1ef8895917a45ee663c4.js></script></body></html>
